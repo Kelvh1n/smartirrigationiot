@@ -1,0 +1,40 @@
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import { CircularProgressbar } from 'react-circular-progressbar';
+import 'react-circular-progressbar/dist/styles.css';
+import './App.css';
+
+const Dashboard = ({ onLogout }) => {
+  const navigate = useNavigate();
+
+  const handleLogout = () => {
+    onLogout();
+    navigate('/');
+  };
+
+  return (
+    <div className="farm-container">
+      <h1>Farm Irrigation Dashboard</h1>
+      <div className="progress-container">
+        <div className="progress-item">
+          <div className="progress-icon">🌡️</div>
+          <p>Temperature</p>
+          <CircularProgressbar value={80} text="80%" />
+        </div>
+        <div className="progress-item">
+          <div className="progress-icon">💧</div>
+          <p>Soil Moisture</p>
+          <CircularProgressbar value={60} text="60%" />
+        </div>
+        <div className="progress-item">
+          <div className="progress-icon">🌡️</div>
+          <p>Waterproof Temp</p>
+          <CircularProgressbar value={70} text="70%" />
+        </div>
+      </div>
+      <button className="logout-button" onClick={handleLogout}>Logout</button>
+    </div>
+  );
+};
+
+export default Dashboard;

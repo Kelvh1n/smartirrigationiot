@@ -1,0 +1,68 @@
+/* Farm Dashboard Styling */
+.farm-dashboard {
+  background-color: #eaf9e5;
+  color: #2c6b2f;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  padding: 2rem;
+}
+
+.dashboard-title {
+  font-size: 2.5rem;
+  color: #2c6b2f;
+  margin-bottom: 2rem;
+}
+
+.progress-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2rem;
+}
+
+.progress-item {
+  width: 150px;
+  text-align: center;
+  background-color: #f2f8f3;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.progress-icon {
+  font-size: 2rem;
+  color: #3c9c5e;
+}
+
+.progress-label {
+  font-size: 1.1rem;
+  margin-top: 0.5rem;
+}
+
+.data-container {
+  margin-top: 2rem;
+  background-color: #f2f8f3;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.data-item {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+.logout-button {
+  background-color: #6fa36d;
+  color: white;
+  border: none;
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logout-button:hover {
+  background-color: #54914f;
+}

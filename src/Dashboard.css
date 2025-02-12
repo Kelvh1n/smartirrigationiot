@@ -1,0 +1,137 @@
+/* 🌱 Farm Dashboard Styling 🌱 */
+
+/* Body Background with Green Gradient */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #a8e063, #56ab2f);
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* Main Dashboard Container with Padding and Centered */
+.farm-container {
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 15px;
+  max-width: 95%;
+  margin: 30px auto;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+
+/* Title Styling */
+h1 {
+  font-size: 32px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #2c6e49;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  padding-bottom: 20px;
+  letter-spacing: 1.5px;
+}
+
+/* Timeframe Selector Styling */
+.timeframe-selector {
+  margin: 20px 0;
+}
+
+.timeframe-selector button {
+  background-color: #66bb6a;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.timeframe-selector button:hover {
+  background-color: #81c784;
+}
+
+/* Progress Container with Flexbox */
+.progress-container {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+/* Individual Progress Item Styling */
+.progress-item {
+  width: 160px;
+  height: 160px;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease-in-out;
+  border: 2px solid #81c784;
+}
+
+/* Hover Effect for Progress Items */
+.progress-item:hover {
+  transform: scale(1.05);
+  border-color: #66bb6a;
+}
+
+/* Progress Icon (emoji) */
+.progress-icon {
+  font-size: 35px;
+  color: #81c784;
+  margin-bottom: 10px;
+  animation: bounce 1.5s infinite alternate;
+}
+
+/* Sensor Label Styling */
+.progress-item p {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 10px;
+  color: #388e3c;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+
+/* Bounce Animation for Icons */
+@keyframes bounce {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-5px); }
+}
+
+/* Line Chart Container Styling */
+.line-chart-container {
+  margin-top: 30px;
+  max-width: 100%;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Logout Button Styling */
+.logout-button {
+  background-color: #2c6e49;
+  color: white;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 30px;
+  transition: background-color 0.3s;
+}
+
+/* Hover Effect for Logout Button */
+.logout-button:hover {
+  background-color: #66bb6a;
+}
